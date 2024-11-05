@@ -1,0 +1,18 @@
+/* Hide the main scrollbar */
+
+.scrollBar {
+}
+
+.scrollBar::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+/* Style the scrollbar track */
+.scrollBar::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Style the scrollbar thumb */
+.scrollBar::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
