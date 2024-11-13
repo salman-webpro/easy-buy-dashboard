@@ -19,7 +19,7 @@ const AuthMain = () => {
                         display: { xs: 'none', md: 'block' },
                     }}
                 ></Grid>
-                <Grid
+                {/* <Grid
                     item
                     lg={6}
                     md={12}
@@ -33,7 +33,7 @@ const AuthMain = () => {
                         transition: 'opacity 1s ease-in-out',
                     }}
                     width={'100%'}
-                >
+                > */}
                     <Stack
                         className={`my-8 mx-2 m-2 px-10 pt-4 bg-black bg-opacity-10 rounded-[15px] backdrop-blur-[50px] flex-col items-center gap-2 inline-flex`}
                     >
