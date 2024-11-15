@@ -62,7 +62,7 @@ const CategoryAdd = ({ category, toggleAddDrawer }) => {
                     }}
                 />
             </Stack>
-            <Stack direction={'row'} justifyContent={'end'} mt={3}>
+            {/* <Stack direction={'row'} justifyContent={'end'} mt={3}>
                 <Button
                     startIcon={<SaveOutlinedIcon />}
                     variant='contained'
@@ -71,7 +71,7 @@ const CategoryAdd = ({ category, toggleAddDrawer }) => {
                 >
                     Save
                 </Button>
-            </Stack>
+            </Stack> */}
             {/*</form>*/}
         </Stack>
     );
