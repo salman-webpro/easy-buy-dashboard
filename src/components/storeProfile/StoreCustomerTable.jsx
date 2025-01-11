@@ -116,6 +116,47 @@ export default function DataTable({ data, headers }) {
                     </TableBody>
                 </Table>
             </TableContainer>
+            <TableContainer component={Paper} sx={{ borderRadius: '10px' }}>
+                <Table sx={{ minWidth: 650, overflowY: 'scroll' }} aria-label='simple table'>
+                    <TableHead>
+                        <TableRow>
+                            {headers.map((header) => (
+                                <StyledTableCell
+                                    key={header.label}
+                                    align='center'
+                                    onClick={() => requestSort(header.key)}
+                                    sx={{
+                                        cursor: 'pointer',
+                                        fontWeight: 'bold',
+                                        bgcolor: 'primary.50',
+                                    }}
+                                >
+                                    {header.label}
+                                    {sortConfig.key === header.key && (
+                                        <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
+                                    )}
+                                </StyledTableCell>
+                            ))}
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {sortedData.map((row, index) => (
+                            <StyledTableRow key={index}>
+                                {headers.map((header) => (
+                                    <>
+                                        <StyledTableCell key={header.key} align='center'>
+                                            {header.key === 'name' && row[header.key]}
+                                            {header.key === 'id' && row[header.key]}
+                                            {header.key === 'email' && row[header.key]}
+                                            {header.key === 'total' && row[header.key]}
+                                        </StyledTableCell>
+                                    </>
+                                ))}
+                            </StyledTableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
             <TablePaginate
                 totalPages={totalPages}
                 currentPage={currentPage}
