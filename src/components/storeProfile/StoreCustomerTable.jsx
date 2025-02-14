@@ -121,19 +121,19 @@ export default function DataTable({ data, headers }) {
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
             />
-            {/*<Drawer anchor='right' open={productOpen} onClose={() => setProductOpen(false)}>*/}
-            {/*    <Box*/}
-            {/*        sx={{*/}
-            {/*            width: 1000,*/}
-            {/*            p: 2,*/}
-            {/*            height: '100vh',*/}
-            {/*            borderRadius: '20px 0 20px 0',*/}
-            {/*        }}*/}
-            {/*    >*/}
-            {/*        <Typography>Product Details</Typography>*/}
-            {/*        <ProductView product={productData} setProductOpen={setProductOpen} />*/}
-            {/*    </Box>*/}
-            {/*</Drawer>*/}
+            <Drawer anchor='right' open={productOpen} onClose={() => setProductOpen(false)}>
+                <Box>
+                  sx={{
+                        width: 1000,
+                       p: 2,
+                       height: '100vh',
+                      borderRadius: '20px 0 20px 0',
+                    }}
+               
+                   <Typography>Product Details</Typography>
+                   <ProductView product={productData} setProductOpen={setProductOpen} />
+                </Box>
+            </Drawer>
         </>
     );
 }
