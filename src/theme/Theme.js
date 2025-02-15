@@ -20,7 +20,7 @@ let theme = createTheme({
             styleOverrides: {
                 root: {
                     backgroundColor: 'rgba(255,255,255,0.8)',
-                    borderColor: '#7BB29A',
+                    borderColor: '#f15a2d',
                     '& label': {
                         color: 'black',
                     },
@@ -33,15 +33,15 @@ let theme = createTheme({
                         paddingBottom: '0px',
                         fontSize: '14px',
                         '& fieldset': {
-                            borderColor: '#7BB29A',
-                            border: '0.3px solid #7BB29A',
+                            borderColor: '#f15a2d',
+                            border: '0.3px solid #f15a2d',
                         },
                         '&:hover fieldset': {
-                            borderColor: '#7BB29A',
+                            borderColor: '#f15a2d',
                         },
                         '&.Mui-focused fieldset': {
-                            borderColor: '#7BB29A',
-                            border: '0.3px solid #7BB29A',
+                            borderColor: '#f15a2d',
+                            border: '0.3px solid #f15a2d',
                         },
                     },
                     '& .MuiInputBase-root': { height: '44px' },
@@ -91,15 +91,15 @@ let theme = createTheme({
             styleOverrides: {
                 root: {
                     '& .MuiOutlinedInput-notchedOutline': {
-                        borderColor: '#7BB29A',
-                        border: '0.3px solid #7BB29A',
+                        borderColor: '#f15a2d',
+                        border: '0.3px solid #f15a2d',
                     },
                     '&:hover .MuiOutlinedInput-notchedOutline': {
-                        borderColor: '#7BB29A',
+                        borderColor: '#f15a2d',
                     },
                     '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                        borderColor: '#7BB29A',
-                        border: '0.3px solid #7BB29A',
+                        borderColor: '#f15a2d',
+                        border: '0.3px solid #f15a2d',
                     },
                 },
             },

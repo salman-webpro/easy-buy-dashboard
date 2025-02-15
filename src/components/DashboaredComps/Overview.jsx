@@ -11,10 +11,7 @@ const Overview = () => {
     let [yearFilterValue, setYearFilterValue] = React.useState('2023');
     let [MonthFilterValue, setMonthFilterValue] = React.useState('January');
     return (
-        <Box
-            sx={{ backgroundColor: '#fff', marginRight: '10px', marginBottom: '10px' }}
-            padding={2}
-        >
+        <Box sx={{ backgroundColor: '#fff', marginLeft: '10px', marginBottom: '10px' }} padding={2}>
             <Stack direction={'row'} justifyContent={'space-between'}>
                 <Typography
                     sx={{ fontSize: { lg: '20px', md: '18px', xs: '14px', maxWidth: '50%' } }}

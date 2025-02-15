@@ -88,7 +88,7 @@ function ResponsiveDrawer(props) {
                                     style={{
                                         backgroundColor:
                                             location?.pathname === item.link
-                                                ? '#006C4A'
+                                                ? '#353535'
                                                 : 'transparent',
                                         borderRadius: '0 15px 15px 0',
                                         padding: '8px',
@@ -96,13 +96,13 @@ function ResponsiveDrawer(props) {
                                         color:
                                             location?.pathname === item.link
                                                 ? '#ffffff'
-                                                : '#7BB29A',
+                                                : '#f15a2d',
                                     }}
                                 >
                                     {item.icon} {item.path}
                                 </div>
                             </ListItemIcon>
-                            <ListItemText sx={{ color: '#7BB29A' }} primary={item.text} />
+                            <ListItemText sx={{ color: '#767676' }} primary={item.text} />
                         </ListItem>
                     ))}
                 </Stack>
@@ -119,7 +119,7 @@ function ResponsiveDrawer(props) {
                         </ListItemIcon>
 
                         <ListItemText
-                            sx={{ color: 'primary.100', marginLeft: '-22px' }}
+                            sx={{ color: 'primary.500', marginLeft: '-22px' }}
                             primary={'Logout'}
                         />
                     </ListItem>

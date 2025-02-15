@@ -75,7 +75,7 @@ const TopBar = ({
                     lg: 'end',
                 }}
             >
-                <IconButton
+                {/* <IconButton
                     sx={{
                         color: '#006C4A',
                         borderRadius: '8px',
@@ -104,7 +104,7 @@ const TopBar = ({
                     }}
                 >
                     <FileDownloadOutlinedIcon />
-                </IconButton>
+                </IconButton> */}
                 <Button
                     variant='contained'
                     sx={{

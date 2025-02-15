@@ -19,9 +19,9 @@ const Listings = ({ Products, ListingsData }) => {
                 <Typography variant={'titleLarge'} color={'primary.800'}>
                     Listings
                 </Typography>
-                <Stack width={'40%'} direction={'row'} spacing={1}>
+                <Stack width={'20%'} direction={'row'} spacing={1}>
+                    {/* <Sorting Ranges={Ranges} placeholder={'Price Sorting'} /> */}
                     <Sorting Ranges={Ranges} placeholder={'Price Sorting'} />
-                    <Sorting Ranges={Ranges} placeholder={'Item Sorting'} />
                     <Button>See all listings</Button>
                 </Stack>
             </Stack>

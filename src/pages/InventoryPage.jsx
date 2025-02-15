@@ -41,6 +41,16 @@ const InventoryPage = () => {
             />
             <Stack mt={4}>
                 <Grid container wrap={'nowrap'} gap={2}>
+                    <Grid item md={8.3}>
+                        <Stack
+                            height={'161px'}
+                            p={2}
+                            sx={{ bgcolor: 'white.main', borderRadius: '10px' }}
+                        >
+                            <InventorySummery />
+                        </Stack>
+                    </Grid>
+
                     <Grid item md={3.7}>
                         <Stack
                             height={'161px'}
@@ -54,15 +64,6 @@ const InventoryPage = () => {
                         >
                             <InventoryChart />
                             {/*<PieCharts />*/}
-                        </Stack>
-                    </Grid>
-                    <Grid item md={8.3}>
-                        <Stack
-                            height={'161px'}
-                            p={2}
-                            sx={{ bgcolor: 'white.main', borderRadius: '10px' }}
-                        >
-                            <InventorySummery />
                         </Stack>
                     </Grid>
                 </Grid>

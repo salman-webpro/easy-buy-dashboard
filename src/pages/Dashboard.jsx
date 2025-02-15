@@ -22,20 +22,8 @@ const Dashboard = () => {
             <Grid container spacing={1}>
                 <Grid item lg={8} md={12}>
                     <Grid container>
-                        {/*Overview*/}
-                        <Grid
-                            item
-                            lg={7}
-                            md={12}
-                            sx={{
-                                borderRadius: '10px',
-                            }}
-                        >
-                            <Overview />
-                        </Grid>
-
                         {/*Pie charts */}
-                        <Grid item lg={5} md={12} spacing={1} sx={{ paddingBottom: '10px' }}>
+                        <Grid item lg={5} spacing={1} md={12} sx={{ paddingBottom: '10px' }}>
                             <Stack
                                 justifyContent={'center'}
                                 alignItems={'center'}
@@ -56,6 +44,18 @@ const Dashboard = () => {
                                 </Typography>
                                 <PieCharts isDashboard={true} />
                             </Stack>
+                        </Grid>
+
+                        {/*Overview*/}
+                        <Grid
+                            item
+                            lg={7}
+                            md={12}
+                            sx={{
+                                borderRadius: '10px',
+                            }}
+                        >
+                            <Overview />
                         </Grid>
                         {/*Restock*/}
                         <Grid item md={12}>
