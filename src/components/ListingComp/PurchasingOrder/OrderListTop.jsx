@@ -64,7 +64,7 @@ const orderListTop = ({ orderDetailsData }) => {
                     >
                         <Typography variant='labelMedium' color={'sc.two'}>
                             in{' '}
-                            <span style={{ color: '#006C4A', fontSize: '1.5rem ' }}>
+                            <span style={{ color: '#f15a2d', fontSize: '1.5rem ' }}>
                                 {orderDetailsData.totalOrders}
                             </span>{' '}
                             Orders

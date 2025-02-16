@@ -19,7 +19,7 @@ const CustomerInfo = ({ selectedOffer }) => {
             sx={{ borderRadius: '10px' }}
             spacing={2}
         >
-            <Typography variant='titleLarge' color={'primary.800'}>
+            <Typography variant='titleLarge' color={'primary.500'}>
                 Customer Info
             </Typography>
             <Stack
@@ -33,7 +33,7 @@ const CustomerInfo = ({ selectedOffer }) => {
                     <Typography variant={'titleLarge'} color={'primary.800'}>
                         Customers
                     </Typography>
-                    <Typography variant={'headlineMedium'} color={'primary.700'}>
+                    <Typography variant={'headlineMedium'} color={'primary.100'}>
                         {selectedOffer?.customers?.length}
                     </Typography>
                 </Stack>

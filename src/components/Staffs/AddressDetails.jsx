@@ -16,13 +16,13 @@ const AddressDetails = ({ selectedStaff }) => {
                 <Grid item xs={6}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Country
                             </Typography>
                             <TextShow data={selectedStaff?.address?.country} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Street
                             </Typography>
                             <TextShow data={selectedStaff?.address?.street} />
@@ -32,13 +32,13 @@ const AddressDetails = ({ selectedStaff }) => {
                 <Grid item xs={6}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 City
                             </Typography>
                             <TextShow data={selectedStaff?.address?.city} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Post Code
                             </Typography>
                             <TextShow data={selectedStaff?.address?.postalCode} />

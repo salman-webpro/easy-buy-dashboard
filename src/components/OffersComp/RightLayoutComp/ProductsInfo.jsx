@@ -26,7 +26,7 @@ const ProductsInfo = ({ selectedOffer }) => {
             sx={{ borderRadius: '10px' }}
             spacing={2}
         >
-            <Typography variant='titleLarge' color={'primary.800'}>
+            <Typography variant='titleLarge' color={'primary.500'}>
                 Product Info
             </Typography>
             <Stack
@@ -40,7 +40,7 @@ const ProductsInfo = ({ selectedOffer }) => {
                     <Typography variant={'titleLarge'} color={'primary.800'}>
                         Items
                     </Typography>
-                    <Typography variant={'headlineMedium'} color={'primary.700'}>
+                    <Typography variant={'headlineMedium'} color={'primary.100'}>
                         {selectedOffer?.items.length}
                     </Typography>
                 </Stack>

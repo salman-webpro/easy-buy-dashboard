@@ -48,36 +48,6 @@ const LeftLayout = ({ staffs, setSelectedStaff, selectedStaff }) => {
                         <Divider />
                         <MenuItem value={'salesPerson'}>Sales Person</MenuItem>
                     </Select>
-                    <Stack direction={'row'} gap={1} justifyContent={'end'} alignItems={'center'}>
-                        <IconButton
-                            sx={{
-                                border: '1px solid',
-                                borderRadius: '10px',
-                                '&:hover': {
-                                    bgcolor: 'primary.600',
-                                    color: 'sc.one',
-                                },
-                                height: '48px',
-                            }}
-                        >
-                            <CiImport />
-                        </IconButton>
-                    </Stack>
-                    <Stack direction={'row'} gap={1} justifyContent={'end'} alignItems={'center'}>
-                        <IconButton
-                            sx={{
-                                border: '1px solid',
-                                borderRadius: '10px',
-                                '&:hover': {
-                                    bgcolor: 'primary.600',
-                                    color: 'sc.one',
-                                },
-                                height: '48px',
-                            }}
-                        >
-                            <CiExport />
-                        </IconButton>
-                    </Stack>
                 </Stack>
             </Stack>
 
@@ -120,10 +90,10 @@ const LeftLayout = ({ staffs, setSelectedStaff, selectedStaff }) => {
                             />
 
                             <Stack>
-                                <Typography variant='labelLarge' color='primary.800'>
+                                <Typography variant='labelLarge' color='primary.500'>
                                     {staff.name}
                                 </Typography>
-                                <Typography variant='labelSmall' color='positive.main'>
+                                <Typography variant='labelSmall' color='primary.100'>
                                     {staff.position}
                                 </Typography>
                             </Stack>

@@ -30,7 +30,7 @@ export default function TabTable({ customerDetails }) {
                     onChange={handleChange}
                     centered
                     aria-label='tabs with tables'
-                    sx={{ border: '1px solid #7BB29A', borderRadius: '8px' }}
+                    sx={{ border: '1px solid #f15a2d', borderRadius: '8px' }}
                 >
                     <Tab label='Invoices' sx={{ marginRight: '120px' }} />
 

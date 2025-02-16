@@ -86,7 +86,7 @@ const OfferLeftLayout = ({ OfferData, setSelectedOffer, selectedOffer }) => {
                                 sx={{
                                     '&.MuiButtonBase-root.MuiTab-root': {
                                         textTransform: 'none',
-                                        color: value === 0 ? 'primary.800' : 'sc.two',
+                                        color: value === 0 ? 'primary.500' : 'sc.two',
                                     },
                                 }}
                             />
@@ -96,7 +96,7 @@ const OfferLeftLayout = ({ OfferData, setSelectedOffer, selectedOffer }) => {
                                 sx={{
                                     '&.MuiButtonBase-root.MuiTab-root': {
                                         textTransform: 'none',
-                                        color: value === 1 ? 'primary.800' : 'sc.two',
+                                        color: value === 1 ? 'primary.500' : 'sc.two',
                                     },
                                 }}
                             />
@@ -113,7 +113,7 @@ const OfferLeftLayout = ({ OfferData, setSelectedOffer, selectedOffer }) => {
                     <Stack
                         justifyContent={'center'}
                         alignItems={'center'}
-                        width={'70%'}
+                        width={'100%'}
                         sx={{
                             backgroundColor: 'background.main',
                             padding: '5px 30px',
@@ -121,32 +121,12 @@ const OfferLeftLayout = ({ OfferData, setSelectedOffer, selectedOffer }) => {
                         }}
                         spacing={2}
                     >
-                        <Typography variant={'headlineSmall'} color={'primary.800'}>
+                        <Typography variant={'headlineSmall'} color={'primary.100'}>
                             {value === 0 ? activeOffers.length : expiredOffers.length}
                         </Typography>
-                        <Typography variant={'titleMedium'} color={'primary.400'}>
+                        <Typography variant={'titleMedium'} color={'primary.500'}>
                             {value === 0 ? 'Active' : 'Expired'} Offers
                         </Typography>
-                    </Stack>
-                    <Stack
-                        direction={'row'}
-                        gap={1}
-                        justifyContent={'end'}
-                        alignItems={'center'}
-                        width={'30%'}
-                    >
-                        <IconButton
-                            sx={{
-                                border: '1px solid',
-                                borderRadius: '10px',
-                                '&:hover': {
-                                    bgcolor: 'primary.600',
-                                    color: 'sc.one',
-                                },
-                            }}
-                        >
-                            <FileUploadOutlinedIcon />
-                        </IconButton>
                     </Stack>
                 </Stack>
             </Stack>

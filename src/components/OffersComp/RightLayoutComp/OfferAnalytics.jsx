@@ -10,12 +10,12 @@ const OfferAnalytics = ({ selectedOffer }) => {
             <Grid item lg={4}>
                 <Stack spacing={4}>
                     <Stack>
-                        <Typography variant='titleLarge' color={'primary.700'}>
+                        <Typography variant='titleLarge' color={'primary.500'}>
                             Conversion Rate
                         </Typography>
                     </Stack>
                     <Stack>
-                        <Typography variant='extraBold' color={'primary.400'}>
+                        <Typography variant='extraBold' color={'primary.100'}>
                             {' '}
                             {selectedOffer?.conversionRate?.totalNumberOfSale}k
                         </Typography>
@@ -26,7 +26,7 @@ const OfferAnalytics = ({ selectedOffer }) => {
                         </Typography>
                     </Stack>
                     <Stack>
-                        <Typography variant='extraBold' color={'primary.400'}>
+                        <Typography variant='extraBold' color={'primary.100'}>
                             {' '}
                             {selectedOffer?.conversionRate?.totalNumberOfVisitor}
                         </Typography>
@@ -37,7 +37,7 @@ const OfferAnalytics = ({ selectedOffer }) => {
                         </Typography>
                     </Stack>
                     <Stack>
-                        <Typography variant='extraBold' color={'primary.400'}>
+                        <Typography variant='extraBold' color={'primary.100'}>
                             {' '}
                             {selectedOffer?.conversionRate?.conversionRate}%
                         </Typography>

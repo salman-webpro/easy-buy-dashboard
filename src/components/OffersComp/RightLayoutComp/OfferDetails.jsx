@@ -12,21 +12,21 @@ const OfferDetails = ({ selectedOffer }) => {
     return (
         <>
             <Stack width={'100%'} p={2} backgroundColor='white.main' sx={{ borderRadius: '10px' }}>
-                <Typography variant='titleLarge' color={'primary.800'}>
+                <Typography variant='titleLarge' color={'primary.500'}>
                     Offer Details
                 </Typography>
                 <Grid container spacing={2} mt={1}>
                     <Grid item xs={6}>
                         <Grid container spacing={3}>
                             <Grid item xs={12}>
-                                <Typography variant='titleMedium' color='primary.200'>
+                                <Typography variant='titleMedium' color='primary.100'>
                                     Start Date
                                 </Typography>
                                 <TextShow data={selectedOffer?.startDate} />
                             </Grid>
 
                             <Grid item xs={12}>
-                                <Typography variant='titleMedium' color='primary.200'>
+                                <Typography variant='titleMedium' color='primary.100'>
                                     Availability
                                 </Typography>
                                 <TextShow data={selectedOffer?.Availability} />
@@ -36,13 +36,13 @@ const OfferDetails = ({ selectedOffer }) => {
                     <Grid item xs={6}>
                         <Grid container spacing={3}>
                             <Grid item xs={12}>
-                                <Typography variant='titleMedium' color='primary.200'>
+                                <Typography variant='titleMedium' color='primary.100'>
                                     End Date
                                 </Typography>
                                 <TextShow data={selectedOffer?.EndDate} />
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography variant='titleMedium' color='primary.200'>
+                                <Typography variant='titleMedium' color='primary.100'>
                                     Category
                                 </Typography>
                                 <TextShow data={selectedOffer?.category} />
@@ -64,7 +64,7 @@ const OfferDetails = ({ selectedOffer }) => {
                     <Grid item xs={6}>
                         <Grid container spacing={3}>
                             <Grid item xs={12}>
-                                <Typography variant='titleMedium' color='primary.200'>
+                                <Typography variant='titleMedium' color='primary.100'>
                                     Discount in %
                                 </Typography>
                                 <TextShow data={`${selectedOffer?.discountInPercent}%`} />
@@ -74,7 +74,7 @@ const OfferDetails = ({ selectedOffer }) => {
                     <Grid item xs={6}>
                         <Grid container spacing={3}>
                             <Grid item xs={12}>
-                                <Typography variant='titleMedium' color='primary.200'>
+                                <Typography variant='titleMedium' color='primary.100'>
                                     Discount Price
                                 </Typography>
                                 <TextShow data={selectedOffer?.discountAmount} />

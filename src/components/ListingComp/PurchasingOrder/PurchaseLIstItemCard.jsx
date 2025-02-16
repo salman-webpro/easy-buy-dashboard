@@ -11,7 +11,7 @@ const PurchaseLIstItemCard = ({ image, name, price, category, quantity, paymentS
                 <Stack
                     sx={{
                         border: 1,
-                        borderColor: '#4D80A8',
+                        borderColor: '#f15a2d',
                         borderRadius: 10,
                         width: '60px',
                         height: '60px',
@@ -22,22 +22,22 @@ const PurchaseLIstItemCard = ({ image, name, price, category, quantity, paymentS
                 </Stack>
 
                 <Stack spacing={1}>
-                    <Typography variant={'titleMedium'} color={'primary.800'}>
+                    <Typography variant={'titleMedium'} color={'primary.500'}>
                         {name}
                     </Typography>
-                    <Typography variant={'bodyLarge'} color={'positive.main'}>
+                    <Typography variant={'bodyLarge'} color={'primary.100'}>
                         ${price}
                     </Typography>
                     <Stack direction={'row'} spacing={2} alignItems={'center'}>
-                        <Typography variant={'bodySmall'} color={'primary.200'}>
+                        <Typography variant={'bodySmall'} color={'primary.500'}>
                             {category}
                         </Typography>
                         <FiberManualRecordIcon sx={{ fontSize: '10px', color: '#EEEEEE' }} />
-                        <Typography variant={'bodySmall'} color={'primary.200'}>
+                        <Typography variant={'bodySmall'} color={'primary.500'}>
                             {quantity}
                         </Typography>
                     </Stack>
-                    <Typography variant={'bodySmall'} color={'primary.200'}>
+                    <Typography variant={'bodySmall'} color={'primary.500'}>
                         Sku: {sku}
                     </Typography>
                 </Stack>

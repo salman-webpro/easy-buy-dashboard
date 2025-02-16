@@ -27,12 +27,12 @@ const OfferTop = ({ selectedOffer }) => {
             <Stack direction={'row'} p={2} spacing={2} alignItems='center'>
                 <Avatar src={selectedOffer?.image} sx={{ width: '100px', height: '100px' }} />
                 <Stack spacing={1}>
-                    <Typography variant='headlineMedium' color={'primary.700'}>
+                    <Typography variant='headlineMedium' color={'primary.500'}>
                         {selectedOffer?.OfferName}
                     </Typography>
                     <Typography variant='labelMedium' color={'sc.two'}>
                         Total Value{' '}
-                        <span style={{ color: '#006C4A' }}>${selectedOffer?.totalValue}</span>{' '}
+                        <span style={{ color: '#f15a2d' }}>${selectedOffer?.totalValue}</span>{' '}
                         <span
                             style={{
                                 fontSize: '12px',
@@ -45,7 +45,7 @@ const OfferTop = ({ selectedOffer }) => {
                     </Typography>
                     <Typography variant='labelMedium' color={'sc.two'}>
                         Min Purchase Amount{' '}
-                        <span style={{ color: '#006C4A' }}>
+                        <span style={{ color: '#f15a2d' }}>
                             ${selectedOffer?.minPurchaseAmount}
                         </span>
                     </Typography>

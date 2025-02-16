@@ -28,7 +28,7 @@ const BarCharts = ({ selectedOffer }) => {
                         },
                     },
                 },
-                colors: [isExpired === true ? '#FF0000' : '#008000'],
+                colors: [isExpired === true ? '#FF0000' : '#f15a2d'],
                 grid: {
                     show: true,
                     borderColor: '#f1f1f1',

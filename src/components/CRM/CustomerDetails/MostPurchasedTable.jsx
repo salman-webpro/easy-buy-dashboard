@@ -46,7 +46,7 @@ const MostPurchasedTable = ({ MostPurchases }) => {
 
     return (
         <Stack>
-            <Typography variant='titleLarge' color='primary.400'>
+            <Typography variant='titleLarge' color='primary.500'>
                 Most Purchased Item
             </Typography>
             <TableContainer component={Paper} sx={{ borderRadius: '10px', marginTop: 2 }}>

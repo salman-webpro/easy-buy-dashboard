@@ -16,7 +16,6 @@ const RightLayout = ({ selectedStaff }) => {
     const toggleAddDrawer = (data) => {
         setIsAddDrawerOpen(!isAddDrawerOpen);
         setStaffData(data);
-        console.log(data);
         // setProductOpen(false);
     };
     return (

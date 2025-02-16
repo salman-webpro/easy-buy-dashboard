@@ -39,7 +39,7 @@ const OrderCards = ({ list }) => {
                                             height: 40,
                                             fontSize: 10,
                                             backgroundColor: 'primary.600',
-                                            borderColor: 'primary.200',
+                                            borderColor: 'primary.100',
                                             marginLeft: '-30px',
                                         },
                                     }}
@@ -49,7 +49,7 @@ const OrderCards = ({ list }) => {
                                             key={index}
                                             alt='Remy Sharp'
                                             src={image}
-                                            style={{ borderColor: '#689D86' }}
+                                            style={{ borderColor: '#f15a2d' }}
                                         />
                                     ))}
                                 </AvatarGroup>

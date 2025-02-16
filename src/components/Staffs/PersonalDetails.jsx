@@ -15,25 +15,25 @@ const PersonalDetails = ({ selectedStaff }) => {
                 <Grid item xs={6}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 First Name
                             </Typography>
                             <TextShow data={selectedStaff?.name.split(' ')[0]} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Staff ID
                             </Typography>
                             <TextShow data={selectedStaff?.staffID} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Gender
                             </Typography>
                             <TextShow data={selectedStaff?.gender} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Joining Date
                             </Typography>
                             <TextShow data={selectedStaff?.joiningDate} />
@@ -43,19 +43,19 @@ const PersonalDetails = ({ selectedStaff }) => {
                 <Grid item xs={6}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Last Name
                             </Typography>
                             <TextShow data={selectedStaff?.name.split(' ')[1]} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Email
                             </Typography>
                             <TextShow data={selectedStaff?.email} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Phone Number
                             </Typography>
                             <TextShow data={selectedStaff?.phone} />
