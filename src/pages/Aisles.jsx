@@ -26,7 +26,7 @@ const Aisles = () => {
                     </Typography>
                     <Button
                         variant='contained'
-                        sx={{ bgcolor: 'primary.400' }}
+                        sx={{ bgcolor: 'primary.500' }}
                         startIcon={<AddOutlinedIcon />}
                         onClick={toggleAddDrawer}
                     >

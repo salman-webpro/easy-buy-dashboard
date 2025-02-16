@@ -15,7 +15,7 @@ const WishlistTop = ({ ListingsData, setListingOpen }) => {
                 <Stack spacing={2}>
                     <Typography variant='titleLarge'>{ListingsData.name}</Typography>
                     <Stack spacing={1}>
-                        <Typography variant='bodySmall' color={'primary.600'}>
+                        <Typography variant='bodySmall' color={'primary.500'}>
                             {ListingsData.phone}
                         </Typography>
                         <Typography variant='labelMedium' color={'primary.500'}>
@@ -64,7 +64,7 @@ const WishlistTop = ({ ListingsData, setListingOpen }) => {
                     >
                         <Typography variant='labelMedium' color={'sc.two'}>
                             in{' '}
-                            <span style={{ color: '#006C4A', fontSize: '1.5rem ' }}>
+                            <span style={{ color: '#f15a2d', fontSize: '1.5rem ' }}>
                                 {ListingsData.totalOrders}
                             </span>{' '}
                             Orders

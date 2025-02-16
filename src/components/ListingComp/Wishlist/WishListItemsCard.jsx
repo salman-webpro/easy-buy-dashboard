@@ -3,7 +3,7 @@ import { Stack, Paper } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
-const WishListItemsCard = ({ image, name, price, category, quantity }) => {
+const WishListItemsCard = ({ item }) => {
     return (
         <Stack>
             <Stack direction={'row'} spacing={2} component={Paper} padding={1}>
@@ -17,23 +17,27 @@ const WishListItemsCard = ({ image, name, price, category, quantity }) => {
                         padding: '10px',
                     }}
                 >
-                    <img alt={'alt'} src={image} style={{ width: '40px', height: '40px' }} />
+                    <img
+                        alt={'alt'}
+                        src={item?.images[0]}
+                        style={{ width: '40px', height: '40px' }}
+                    />
                 </Stack>
 
                 <Stack spacing={1}>
                     <Typography variant={'titleMedium'} color={'primary.800'}>
-                        {name}
+                        {item?.name}
                     </Typography>
-                    <Typography variant={'bodyLarge'} color={'positive.main'}>
-                        {price}
+                    <Typography variant={'bodyLarge'} color={'primary.100'}>
+                        {item?.price}
                     </Typography>
                     <Stack direction={'row'} spacing={2} alignItems={'center'}>
-                        <Typography variant={'bodySmall'} color={'primary.200'}>
-                            {category}
+                        <Typography variant={'bodySmall'} color={'primary.500'}>
+                            {item?.category}
                         </Typography>
                         <FiberManualRecordIcon sx={{ fontSize: '10px', color: '#EEEEEE' }} />
-                        <Typography variant={'bodySmall'} color={'primary.200'}>
-                            {quantity}
+                        <Typography variant={'bodySmall'} color={'primary.500'}>
+                            {item?.quantity}
                         </Typography>
                     </Stack>
                 </Stack>

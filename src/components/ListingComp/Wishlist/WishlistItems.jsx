@@ -49,15 +49,8 @@ const WishlistItems = ({ ListingsData }) => {
                 </Typography>
                 <Stack spacing={3} mt={3} sx={{ height: '65vh', overflowY: 'auto' }}>
                     {list?.items?.map((item, index) => (
-                        <Box onClick={() => handleActionClick(item)}>
-                            <WishListItemsCard
-                                key={index}
-                                image={item.images[0]}
-                                name={item.name}
-                                price={item.price}
-                                category={item.category}
-                                quantity={item.quantity}
-                            />
+                        <Box sx={{ pointer: 'cursor' }} onClick={() => handleActionClick(item)}>
+                            <WishListItemsCard key={index} item={item} />
                         </Box>
                     ))}
                 </Stack>

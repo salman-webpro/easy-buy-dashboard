@@ -129,13 +129,13 @@ const SubCategoryPages = ({ params }) => {
                 sx={{ bgcolor: 'white.main', borderRadius: '10px', padding: '8px' }}
             >
                 <ProductSearch onSearchChange={handleSearchChange} />
-                <FormControl sx={{ minWidth: 180 }}>
+                {/* <FormControl sx={{ minWidth: 180 }}>
                     <Select
                         labelId='demo-simple-select-label'
                         id='demo-simple-select'
                         value={selectedCategory}
                     ></Select>
-                </FormControl>
+                </FormControl> */}
             </Stack>
             <TableContainer component={Paper} sx={{ borderRadius: '10px', marginTop: '16px' }}>
                 <Table sx={{ minWidth: 650 }} aria-label='simple table'>

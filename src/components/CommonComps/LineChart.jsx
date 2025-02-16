@@ -83,11 +83,11 @@ const LineChart = ({ title, value, percentage }) => {
                 <Typography sx={{ color: '#707070', fontSize: '12px', fontWeight: '400' }}>
                     Jan 1, 2023 - Jun 1, 2023
                 </Typography>
-                <Typography sx={{ color: '#36765C', fontSize: '22px', fontWeight: '700' }}>
+                <Typography sx={{ color: 'primary.500', fontSize: '22px', fontWeight: '700' }}>
                     $995.29K
                 </Typography>
                 <Typography sx={{ color: '#707070', fontSize: '12px', fontWeight: '400' }}>
-                    <span style={{ color: '#24A524' }}>9.2% </span>vs 6 month before
+                    <span style={{ color: '#353535' }}>9.2% </span>vs 6 month before
                 </Typography>
             </Stack>
             <Stack p={2}>

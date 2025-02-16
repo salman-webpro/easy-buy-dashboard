@@ -95,14 +95,14 @@ const CategoryTop = ({ selectedCategory, setSelectedCategory }) => {
                     selectedCategory={selectedCategory}
                 />
 
-                <Stack direction={'row'} alignItems={'center'} gap={0.5}>
+                {/* <Stack direction={'row'} alignItems={'center'} gap={0.5}>
                     <DatePicker
                         startDate={startDate}
                         onChange={(newValue) => setStartDate(newValue)}
                     />
                     <CompareArrowsOutlinedIcon sx={{ color: 'sc.two' }} />
                     <DatePicker endDate={endDate} onChange={handleEndDateChange} />
-                </Stack>
+                </Stack> */}
             </Stack>
             <Stack
                 sx={{
@@ -118,7 +118,7 @@ const CategoryTop = ({ selectedCategory, setSelectedCategory }) => {
                     lg: 'end',
                 }}
             >
-                <IconButton
+                {/* <IconButton
                     sx={{
                         color: '#006C4A',
                         borderRadius: '8px',
@@ -147,7 +147,7 @@ const CategoryTop = ({ selectedCategory, setSelectedCategory }) => {
                     }}
                 >
                     <FileDownloadOutlinedIcon />
-                </IconButton>
+                </IconButton> */}
                 <Button
                     variant='contained'
                     sx={{

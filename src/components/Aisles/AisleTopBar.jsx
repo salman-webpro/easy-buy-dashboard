@@ -21,7 +21,7 @@ const AisleTopBar = ({ onSearchChange }) => {
                 <AilseSearch onSearchChange={onSearchChange} />
                 {/*    Date Filter */}
             </Stack>
-            <Stack sx={{ flex: '1' }} direction={'row'} gap={1} justifyContent={'end'}>
+            {/* <Stack sx={{ flex: '1' }} direction={'row'} gap={1} justifyContent={'end'}>
                 <IconButton
                     sx={{
                         border: '1px solid',
@@ -46,7 +46,7 @@ const AisleTopBar = ({ onSearchChange }) => {
                 >
                     <FileDownloadOutlinedIcon />
                 </IconButton>
-            </Stack>
+            </Stack> */}
         </Stack>
     );
 };
