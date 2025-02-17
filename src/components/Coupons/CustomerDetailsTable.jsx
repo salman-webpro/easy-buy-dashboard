@@ -81,7 +81,13 @@ const CustomerDetailsTable = ({ selectedCoupon }) => {
                     </TableHead>
                     <TableBody>
                         {sortedData.map((customer, index) => (
-                            <TableRow key={index}>
+                            <TableRow
+                                key={index}
+                                onClick={() => toggleAddDrawer(customer)}
+                                sx={{
+                                    cursor: 'pointer',
+                                }}
+                            >
                                 {headers.map((header) => (
                                     <TableCell key={header.key} align='left'>
                                         {header.key === 'name' && (
@@ -92,14 +98,7 @@ const CustomerDetailsTable = ({ selectedCoupon }) => {
                                         )}
                                         {header.key === 'amount' && customer[header.key]}
                                         {header.key === 'purchase' && (
-                                            <Stack
-                                                onClick={() => toggleAddDrawer(customer)}
-                                                sx={{
-                                                    cursor: 'pointer',
-                                                }}
-                                            >
-                                                {customer[header.key]}
-                                            </Stack>
+                                            <Stack>{customer[header.key]}</Stack>
                                         )}
                                     </TableCell>
                                 ))}

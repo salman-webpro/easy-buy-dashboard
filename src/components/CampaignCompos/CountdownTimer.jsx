@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Countdown from 'react-countdown';
 import { Stack } from '@mui/material';
 
-const CountdownTimer = ({ endDate }) => {
+const CountdownTimer = ({ selectedCampaign }) => {
     const [isCountdownRunning, setIsCountdownRunning] = useState(true);
-
+    console.log(selectedCampaign);
     const [Days, setDays] = useState();
     const [Hours, setHours] = useState();
     const [Minutes, setMinutes] = useState();
@@ -15,9 +15,10 @@ const CountdownTimer = ({ endDate }) => {
     };
     const currentDate = new Date();
 
+    const endDate = selectedCampaign?.endDate;
     // Check if the end date is in the past
     if (new Date(endDate) < currentDate) {
-        return <div>Countdown has ended!</div>;
+        return <div>Campaign is expired!</div>;
     }
     return (
         <Stack

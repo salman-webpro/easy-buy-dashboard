@@ -50,7 +50,10 @@ const CampaignRightLayout = ({ selectedCampaign }) => {
                         padding: '10px',
                     }}
                 >
-                    <CountdownTimer endDate='2024-02-09T00:00:00' />
+                    <CountdownTimer
+                        endDate={selectedCampaign?.endDate}
+                        selectedCampaign={selectedCampaign}
+                    />
                 </Grid>
             </Grid>
 

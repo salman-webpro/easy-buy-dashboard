@@ -113,8 +113,8 @@ const CouInvTable = ({ Inv }) => {
             </Stack>
             <Stack p={2} sx={{ borderTop: '1px solid #ccc' }}>
                 <Stack direction='row' justifyContent='space-between' alignItems={'center'}>
-                    <Stack color={'primary.300'}>
-                        <Typography>{Inv.cardNumber} </Typography>
+                    <Stack>
+                        <Typography color={'primary.100'}>{Inv.cardNumber} </Typography>
 
                         <Typography mt={1}>{Inv.paymentMethod}</Typography>
 
@@ -126,7 +126,7 @@ const CouInvTable = ({ Inv }) => {
                                 p={1}
                                 gap={2}
                                 borderRadius={2}
-                                color='primary.300'
+                                color='primary.500'
                                 mt={1}
                             >
                                 <Typography bgcolor='#FFF' borderRadius={2.5} p={0.5}>
@@ -142,7 +142,11 @@ const CouInvTable = ({ Inv }) => {
                     </Stack>
                     {/* TODO: BUG */}
                     <Stack marginRight={7}>
-                        <Typography variant={'headlineMedium'} color={'#004C33;'} marginLeft={57}>
+                        <Typography
+                            variant={'headlineMedium'}
+                            color={'primary.100'}
+                            marginLeft={57}
+                        >
                             ${Inv?.total}
                         </Typography>
                     </Stack>

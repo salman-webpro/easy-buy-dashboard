@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import AddCampaign from '../components/CampaignCompos/AddCampaign';
 
 const Campaign = () => {
-    const [selectedCampaign, setSelectedCampaign] = useState(null);
+    const [selectedCampaign, setSelectedCampaign] = useState(campaigns[0]);
     const [isAddDrawerOpen, setIsAddDrawerOpen] = useState(false); // State for the right drawer
     const [campaignData, setCampaignData] = useState();
 

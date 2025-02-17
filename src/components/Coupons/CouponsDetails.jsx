@@ -14,13 +14,13 @@ const CouponsDetails = ({ selectedCoupon }) => {
                 <Grid item xs={6}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Start Date
                             </Typography>
                             <TextShow data={selectedCoupon?.startDate} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Availability
                             </Typography>
                             <TextShow data={selectedCoupon?.available} />
@@ -30,13 +30,13 @@ const CouponsDetails = ({ selectedCoupon }) => {
                 <Grid item xs={6}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 End Date
                             </Typography>
                             <TextShow data={selectedCoupon?.endDate} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Code
                             </Typography>
                             <TextShow data={selectedCoupon?.code} />

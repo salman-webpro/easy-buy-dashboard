@@ -14,13 +14,13 @@ const DiscountInfo = ({ selectedCoupon }) => {
                 <Grid item xs={6}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Discount Info
                             </Typography>
                             <TextShow data={`${selectedCoupon?.discount}%`} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Minimum Purchase Price
                             </Typography>
                             <TextShow data={`$${selectedCoupon?.minPurchase}`} />
@@ -30,13 +30,13 @@ const DiscountInfo = ({ selectedCoupon }) => {
                 <Grid item xs={6}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Apply Quantity
                             </Typography>
                             <TextShow data={selectedCoupon?.applyQuantity} />
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant='titleMedium' color='primary.200'>
+                            <Typography variant='titleMedium' color='primary.100'>
                                 Total Coupon Count
                             </Typography>
                             <TextShow data={`${selectedCoupon?.total}`} />

@@ -11,16 +11,16 @@ const CouponInviceTop = ({ Invoice }) => {
                 <Typography variant={'displayMedium'} color={'primary.800'}>
                     {Invoice.invoiceNumber}
                 </Typography>
-                <IconButton sx={{ color: 'primary.600' }}>
+                <IconButton sx={{ color: 'primary.100' }}>
                     <PrintOutlinedIcon />
                 </IconButton>
             </Stack>
             <Stack direction={'row'} justifyContent={'space-between'} alignItems={'center'} mt={2}>
                 <Stack>
-                    <Typography variant={'titleLarge'} color={'primary.300'}>
+                    <Typography variant={'titleLarge'} color={'primary.500'}>
                         {Invoice.name}
                     </Typography>
-                    <Typography variant={'bodySmall'} color={'sc.two'}>
+                    <Typography variant={'bodySmall'} color={'primary.100'}>
                         {Invoice.date}
                     </Typography>
                 </Stack>
@@ -28,7 +28,7 @@ const CouponInviceTop = ({ Invoice }) => {
                     <Typography variant={'titleLarge'} color={'primary.800'}>
                         {Invoice.shopName}
                     </Typography>
-                    <Typography variant={'bodySmall'} color={'primary.300'}>
+                    <Typography variant={'bodySmall'} color={'primary.100'}>
                         {Invoice.shopLocation}
                     </Typography>
                 </Stack>

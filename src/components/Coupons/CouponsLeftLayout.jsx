@@ -62,22 +62,6 @@ const CouponsLeftLayout = ({ coupons, setSelectedCoupon, selectedCoupon }) => {
                     {/*        <FileUploadOutlinedIcon />*/}
                     {/*    </IconButton>*/}
                     {/*</Stack>*/}
-                    <Stack direction={'row'} gap={1} justifyContent={'end'} alignItems={'center'}>
-                        <IconButton
-                            sx={{
-                                border: '1px solid #005F40',
-                                borderRadius: '10px',
-                                color: '#005F40',
-                                '&:hover': {
-                                    bgcolor: 'primary.600',
-                                    color: 'sc.two',
-                                },
-                                height: '44px',
-                            }}
-                        >
-                            <MdOutlineFileUpload />
-                        </IconButton>
-                    </Stack>
                 </Stack>
             </Stack>
 
