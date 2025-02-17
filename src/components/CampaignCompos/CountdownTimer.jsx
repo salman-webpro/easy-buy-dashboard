@@ -5,10 +5,6 @@ import { Stack } from '@mui/material';
 const CountdownTimer = ({ selectedCampaign }) => {
     const [isCountdownRunning, setIsCountdownRunning] = useState(true);
     console.log(selectedCampaign);
-    const [Days, setDays] = useState();
-    const [Hours, setHours] = useState();
-    const [Minutes, setMinutes] = useState();
-    const [Seconds, setSeconds] = useState();
 
     const handleComplete = () => {
         setIsCountdownRunning(false);
@@ -26,7 +22,7 @@ const CountdownTimer = ({ selectedCampaign }) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                backgroundColor: '#006C4A',
+                backgroundColor: '#f15a2d',
                 borderRadius: '15px',
                 width: '-webkit-fill-available',
                 height: '-webkit-fill-available',

@@ -45,7 +45,7 @@ const Offerings = ({ selectedCampaign }) => {
                         value={value}
                         onChange={handleChange}
                         centered
-                        sx={{ border: '1px solid #7BB29A', borderRadius: '8px' }}
+                        sx={{ border: '1px solid #f15a2d', borderRadius: '8px' }}
                     >
                         {categories.map((category, index) => (
                             <Tab label={category} key={index} sx={{ marginRight: '110px' }} />
@@ -62,7 +62,7 @@ const Offerings = ({ selectedCampaign }) => {
                                             <Grid item xs={12} sm={6} md={3} key={productIndex}>
                                                 <Stack
                                                     sx={{
-                                                        bgcolor: '#EBF0EE',
+                                                        bgcolor: '#ffdfd5',
                                                         borderRadius: '8px',
                                                         padding: '10px',
                                                     }}

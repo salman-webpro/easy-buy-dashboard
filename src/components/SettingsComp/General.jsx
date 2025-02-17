@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Grid, Stack, Typography } from '@mui/material';
+import { FormControl, Grid, MenuItem, Stack, Typography } from '@mui/material';
 import OptionSelect from './OptionSelect';
 import MultiOptionSelect from './MultiOptionSelect';
 import Button from '@mui/material/Button';
@@ -26,6 +26,7 @@ const General = () => {
                         values={['English', 'Spanish', 'Chinese', 'French']}
                     />
                 </Stack>
+
                 <Stack mb={1}>
                     <TopText
                         title='Date & Number Format'

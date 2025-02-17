@@ -1,21 +1,6 @@
 import React, { useState } from 'react';
-import {
-    Stack,
-    Avatar,
-    Typography,
-    Button,
-    Divider,
-    Drawer,
-    Box,
-    IconButton,
-    Grid,
-} from '@mui/material';
-import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
-import BorderColorOutlinedIcon from '@mui/icons-material/BorderColorOutlined';
-import CountdownTimer from './CountdownTimer';
+import { Stack, Typography } from '@mui/material';
 const CampaignSummary = ({ selectedCampaign }) => {
-    const [isEditDrawerOpen, setIsEditDrawerOpen] = useState(false);
-
     return (
         <Stack>
             <Stack>
@@ -37,9 +22,6 @@ const CampaignSummary = ({ selectedCampaign }) => {
                     >{`Duration: ${selectedCampaign?.startDate} - ${selectedCampaign?.endDate}`}</Typography>
                 </Stack>
             </Stack>
-            {/*<Grid item sm={6}>*/}
-            {/*    <CountdownTimer endDate='2023-12-12T00:00:00' />*/}
-            {/*</Grid>*/}
         </Stack>
     );
 };

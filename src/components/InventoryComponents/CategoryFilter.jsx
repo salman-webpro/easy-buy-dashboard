@@ -32,7 +32,6 @@ const SearchProduct = ({ onSearchChange }) => {
 const CategoryFilter = ({ menuItems, onSearchChange, selectedCategory, setSelectedCategory }) => {
     const handleChange = (event) => {
         const newCategory = event.target.value;
-
         setSelectedCategory(newCategory);
     };
 

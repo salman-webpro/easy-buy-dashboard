@@ -12,7 +12,7 @@ import Pagination from '../CommonComps/TablePaginate';
 import TablePaginate from '../CommonComps/TablePaginate';
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
-        backgroundColor: '#E3FFF3',
+        backgroundColor: '#ffdfd5',
         color: '#004C33',
     },
     [`&.${tableCellClasses.body}`]: {
