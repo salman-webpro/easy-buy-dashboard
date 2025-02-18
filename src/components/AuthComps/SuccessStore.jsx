@@ -27,7 +27,7 @@ const SuccessStore = () => {
                     borderColor: 'white.main',
                     mb: 2,
                 }}
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/easy-buy-dashboard')}
             >
                 <Typography variant={'labelLarge'}>Login</Typography>
             </Button>

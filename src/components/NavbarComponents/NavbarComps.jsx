@@ -12,11 +12,11 @@ const NavbarComps = () => {
     };
     const handleMangerProfile = () => {
         setProfileMenu(null);
-        navigate('/manager-profile');
+        navigate('manager-profile');
     };
     const handleStoreProfile = () => {
         setProfileMenu(null);
-        navigate('/store-profile');
+        navigate('store-profile');
     };
     const handleProfileClose = () => {
         setProfileMenu(null);

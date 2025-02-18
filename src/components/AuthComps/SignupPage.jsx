@@ -59,7 +59,7 @@ const SignupPage = () => {
     const onSubmit = (data) => {
         console.log(data);
         setTimeout(() => {
-            navigate('/create-store');
+            navigate('/easy-buy-dashboard/create-store');
         }, 500);
     };
 
@@ -251,7 +251,7 @@ const SignupPage = () => {
                         color={'yellow.main'}
                         underline={'none'}
                         sx={{ cursor: 'pointer' }}
-                        onClick={() => navigate('/')}
+                        onClick={() => navigate('/easy-buy-dashboard')}
                     >
                         Click here
                     </Link>

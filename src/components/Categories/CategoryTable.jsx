@@ -123,7 +123,7 @@ export default function CategoryTable({ selectedCategory, selectLowStock }) {
 
     const handleRoute = (data) => {
         console.log(data);
-        navigate('/category-product/' + data.parent_category);
+        navigate('/easy-buy-dashboard/category-product/' + data.parent_category);
     };
 
     return (

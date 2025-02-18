@@ -5,11 +5,11 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import billingData from '../../data/billingdata';
 import { styled } from '@mui/material/styles';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-import Pagination from '../CommonComps/TablePaginate';
 import TablePaginate from '../CommonComps/TablePaginate';
+import { Drawer, Box, Typography } from '@mui/material';
+
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
         backgroundColor: '#E3FFF3',
@@ -123,15 +123,14 @@ export default function DataTable({ data, headers }) {
             />
             <Drawer anchor='right' open={productOpen} onClose={() => setProductOpen(false)}>
                 <Box>
-                  sx={{
+                    sx=
+                    {{
                         width: 1000,
-                       p: 2,
-                       height: '100vh',
-                      borderRadius: '20px 0 20px 0',
+                        p: 2,
+                        height: '100vh',
+                        borderRadius: '20px 0 20px 0',
                     }}
-               
-                   <Typography>Product Details</Typography>
-                   <ProductView product={productData} setProductOpen={setProductOpen} />
+                    <Typography>Product Details</Typography>
                 </Box>
             </Drawer>
         </>

@@ -5,7 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import App from './App';
 import './index.css';
 import './main.css';
-import { RouterProvider } from 'react-router-dom';
+import { RouterProvider, BrowserRouter } from 'react-router-dom';
 import { router } from './router/Routes';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -21,7 +21,7 @@ root.render(
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <RouterProvider router={router} />
+                <RouterProvider basename='/easy-buy-dashboard' router={router} />
             </LocalizationProvider>
         </ThemeProvider>
     </React.StrictMode>,

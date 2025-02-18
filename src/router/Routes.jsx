@@ -27,11 +27,11 @@ import CreateStoreForm from '../components/AuthComps/CreateStoreForm';
 
 export const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/easy-buy-dashboard',
         element: <AuthMain />,
         children: [
             {
-                path: '/',
+                path: '',
                 element: <LoginPage />,
             },
             {
@@ -45,65 +45,65 @@ export const router = createBrowserRouter([
         ],
     },
     {
-        path: '/',
+        path: '/easy-buy-dashboard',
         element: <DashboardLayout />,
         children: [
             {
-                path: '/dashboard',
+                path: 'dashboard',
                 element: <Dashboard />,
             },
             {
-                path: '/inventory',
+                path: 'inventory',
                 element: <InventoryPage />,
             },
             {
-                path: '/aisiles',
+                path: 'aisiles',
                 element: <Aisles />,
             },
             {
-                path: '/category',
+                path: 'category',
                 element: <Category />,
             },
             {
-                path: '/listing',
+                path: 'listing',
                 element: <Listing />,
             },
             {
-                path: '/crm',
+                path: 'crm',
                 element: <Crm />,
             },
             {
-                path: '/invoices',
+                path: 'invoices',
                 element: <Invoices />,
             },
             {
-                path: '/staff',
+                path: 'staff',
                 element: <Staffs />,
             },
             {
-                path: '/offers',
+                path: 'offers',
                 element: <Offers />,
             },
             {
-                path: '/coupons',
+                path: 'coupons',
                 element: <Coupons />,
             },
             {
-                path: '/campaigns',
+                path: 'campaigns',
                 element: <Campaign />,
             },
             {
-                path: '/settings',
+                path: 'settings',
                 element: <Settings />,
             },
             {
-                path: '/ads',
+                path: 'ads',
                 element: <AdsPage />,
             },
         ],
     },
     {
-        path: '/',
+        path: '/easy-buy-dashboard',
         element: <SingleLayout />,
         children: [
             {
@@ -115,7 +115,7 @@ export const router = createBrowserRouter([
                 element: <StoreProfilePage />,
             },
             {
-                path: '/category-product/:id',
+                path: 'category-product/:id',
                 element: <SubCategoryPages />,
             },
         ],

@@ -154,13 +154,13 @@ const StoreProfilePage = () => {
                     <DataTable headers={headers} data={store?.customers} />
                 </Stack>
                 {/* Edit Manager Drawer */}
-                <Drawer
+                {/* <Drawer
                     anchor='right'
                     open={isEditStoreOpen}
                     onClose={toggleEditStoreDrawer(false)}
                 >
                     <EditStoreProfile store={store} toggleEditStoreDrawer={toggleEditStoreDrawer} />
-                </Drawer>
+                </Drawer> */}
             </Stack>
         </>
     );

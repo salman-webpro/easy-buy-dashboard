@@ -55,7 +55,7 @@ const CategoryAdd = ({ category, toggleAddDrawer }) => {
                     minRows={8}
                     style={{
                         height: '56px',
-                        border: '1px solid #7BB29A',
+                        border: '1px solid #f15a2d',
                         borderColor: 'green',
                         padding: '5px 10px',
                         borderRadius: '5px',

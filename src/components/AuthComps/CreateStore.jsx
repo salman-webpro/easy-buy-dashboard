@@ -6,6 +6,7 @@ import SuccessStore from './SuccessStore';
 const CreateStore = () => {
     const [storeStart, setStoreStart] = useState(true);
     const [storeCreated, setStoreCreated] = useState(false);
+    console.log(storeCreated, storeStart);
     return (
         <div
             style={{

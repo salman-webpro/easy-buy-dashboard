@@ -44,7 +44,9 @@ function ResponsiveDrawer(props) {
             name: itemName,
             icon: icon,
         });
-        navigate(route);
+        console.log(route.slice(1));
+
+        navigate(route.slice(1));
         setMobileOpen(false);
     };
 
@@ -111,7 +113,7 @@ function ResponsiveDrawer(props) {
                     <ListItem
                         sx={{ paddingY: '5px', cursor: 'pointer' }}
                         onClick={() => {
-                            navigate('/');
+                            navigate('');
                         }}
                     >
                         <ListItemIcon sx={{ color: 'primary.100', marginLeft: '5px' }}>

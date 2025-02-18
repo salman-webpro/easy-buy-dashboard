@@ -50,7 +50,7 @@ const LoginPage = () => {
     const onSubmit = (data) => {
         console.log(data);
         setTimeout(() => {
-            navigate('/dashboard');
+            navigate('dashboard');
         }, 500);
     };
 
@@ -142,7 +142,7 @@ const LoginPage = () => {
                         color={'yellow.main'}
                         underline={'none'}
                         sx={{ cursor: 'pointer' }}
-                        onClick={() => navigate('/signup')}
+                        onClick={() => navigate('signup')}
                     >
                         Click here
                     </Link>
