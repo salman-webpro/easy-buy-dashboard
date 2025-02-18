@@ -7,6 +7,7 @@ export default defineConfig({
         generateBundleSourceMaps: false,
     },
     plugins: [react()],
+    base: '/easy-buy-dashboard',
     css: {
         postcss: {
             plugins: [
