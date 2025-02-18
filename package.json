@@ -1,8 +1,7 @@
 {
     "name": "material-ui-vite",
     "version": "5.0.0",
-    "homepage": "https://salman-webpro.github.io/easy-buy-dashboard",
-    "private": true,
+    "homepage": "https://salman-webpro.github.io/easy-buy-dashboard/",
     "scripts": {
         "dev": "vite --host",
         "build": "vite build",
