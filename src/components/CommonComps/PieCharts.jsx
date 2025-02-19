@@ -5,11 +5,9 @@ import Divider from '@mui/material/Divider';
 
 const PieCharts = ({ isDashboard }) => {
     const PieTitles = ['Listing', 'Purchased', 'Conversion', 'Cancelled'];
-    let ChartData = [{ data: [21, 22, 34, 56] }, PieTitles];
     const [PieChartsData, setPieChartsData] = useState([21, 22, 34, 56]);
     const emptyStackColors = ['#24A524', '#006C4A', '#FFD43D', '#FA6767'];
 
-    let MDcLabels = PieChartsData?.data?.map((entry) => entry.category);
     // console.log(MDcLabels);
     let [MDcChartState, setMDcChartState] = React.useState({
         series: [21, 22, 34, 56],
@@ -25,8 +23,8 @@ const PieCharts = ({ isDashboard }) => {
             dataLabels: {
                 enabled: false,
             },
-            colors: ['#FA6767', '#FFD43D', '#006C4A', '#24A524'],
-            labels: [],
+            colors: ['#24A524', '#006C4A', '#FFD43D', '#FA6767'],
+            labels: PieTitles,
             responsive: [
                 {
                     breakpoint: 480,
@@ -81,7 +79,7 @@ const PieCharts = ({ isDashboard }) => {
                                 }}
                                 variant={'labelMedium'}
                             >
-                                title(20%)
+                                {PieTitles[index % PieTitles.length]} ({entry}%)
                             </Typography>
                         </Stack>
                     </Stack>
