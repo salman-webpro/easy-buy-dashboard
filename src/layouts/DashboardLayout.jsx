@@ -44,9 +44,7 @@ function ResponsiveDrawer(props) {
             name: itemName,
             icon: icon,
         });
-        console.log(route.slice(1));
-
-        navigate(route.slice(1));
+        navigate(route);
         setMobileOpen(false);
     };
 

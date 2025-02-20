@@ -14,18 +14,26 @@ import ExtensionOutlinedIcon from '@mui/icons-material/ExtensionOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 const menuItems = [
-    { text: 'Dashboard', icon: <DashboardOutlinedIcon />, link: '/dashboard' },
-    { text: 'Inventory', icon: <CategoryOutlinedIcon />, link: '/inventory' },
-    { text: 'Aisles', icon: <CatchingPokemonOutlinedIcon />, link: '/aisiles' },
-    { text: 'Category', icon: <FolderCopyOutlinedIcon />, link: '/category' },
-    { text: 'Listing', icon: <FormatListBulletedOutlinedIcon />, link: '/listing' },
-    { text: 'Invoice', icon: <ReceiptOutlinedIcon />, link: '/invoices' },
-    { text: 'CRM', icon: <PeopleOutlinedIcon />, link: '/crm' },
-    { text: 'Staffs', icon: <BadgeOutlinedIcon />, link: '/staff' },
-    { text: 'Offers', icon: <CardGiftcardOutlinedIcon />, link: '/offers' },
-    { text: 'Coupons', icon: <ConfirmationNumberOutlinedIcon />, link: '/coupons' },
-    { text: 'Campaign', icon: <CampaignOutlinedIcon />, link: '/campaigns' },
-    { text: 'Ads', icon: <ExtensionOutlinedIcon />, link: '/ads' },
-    { text: 'Settings', icon: <SettingsOutlinedIcon />, link: '/settings' },
+    { text: 'Dashboard', icon: <DashboardOutlinedIcon />, link: '/easy-buy-dashboard/dashboard' },
+    { text: 'Inventory', icon: <CategoryOutlinedIcon />, link: '/easy-buy-dashboard/inventory' },
+    { text: 'Aisles', icon: <CatchingPokemonOutlinedIcon />, link: '/easy-buy-dashboard/aisiles' },
+    { text: 'Category', icon: <FolderCopyOutlinedIcon />, link: '/easy-buy-dashboard/category' },
+    {
+        text: 'Listing',
+        icon: <FormatListBulletedOutlinedIcon />,
+        link: '/easy-buy-dashboard/listing',
+    },
+    { text: 'Invoice', icon: <ReceiptOutlinedIcon />, link: '/easy-buy-dashboard/invoices' },
+    { text: 'CRM', icon: <PeopleOutlinedIcon />, link: '/easy-buy-dashboard/crm' },
+    { text: 'Staffs', icon: <BadgeOutlinedIcon />, link: '/easy-buy-dashboard/staff' },
+    { text: 'Offers', icon: <CardGiftcardOutlinedIcon />, link: '/easy-buy-dashboard/offers' },
+    {
+        text: 'Coupons',
+        icon: <ConfirmationNumberOutlinedIcon />,
+        link: '/easy-buy-dashboard/coupons',
+    },
+    { text: 'Campaign', icon: <CampaignOutlinedIcon />, link: '/easy-buy-dashboard/campaigns' },
+    { text: 'Ads', icon: <ExtensionOutlinedIcon />, link: '/easy-buy-dashboard/ads' },
+    { text: 'Settings', icon: <SettingsOutlinedIcon />, link: '/easy-buy-dashboard/settings' },
 ];
 export default menuItems;

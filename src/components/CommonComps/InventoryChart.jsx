@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Stack, Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import ReactApexChart from 'react-apexcharts';
+import data from '../../data/Product';
 
 const ColoredBadge = ({ color, label, textColor }) => (
     <Stack
@@ -25,11 +26,27 @@ const ColoredBadge = ({ color, label, textColor }) => (
         </Typography>
     </Stack>
 );
+const totalInStock = data.map((d) => d.stock).reduce((acc, d) => acc + d);
+const totalLowStock = data
+    .filter((d) => d.stock > 0 && d.stock < 10)
+    .map((d) => d.stock)
+    .reduce((acc, d) => acc + d);
+
+const totalOutofStock = data.map((d) => d.stock === 0).reduce((acc, d) => acc + d);
+
+const totalDeadStock = data
+    .filter((d) => d.stock < 0)
+    .map((d) => Math.abs(d.stock))
+    .reduce((acc, d) => acc + d);
 
 const InventoryChart = () => {
     const isDashboard = false;
-    const [PieChartsData, setPieChartsData] = useState([71, 12, 3, 14]);
-    const emptyStackColors = ['#24A524', '#006C4A', '#FFD43D', '#FA6767'];
+    const [PieChartsData, setPieChartsData] = useState([
+        totalInStock,
+        totalOutofStock,
+        totalLowStock,
+        totalDeadStock,
+    ]);
 
     let [MDcChartState, setMDcChartState] = React.useState({
         series: PieChartsData,
@@ -45,8 +62,8 @@ const InventoryChart = () => {
             dataLabels: {
                 enabled: false,
             },
-            colors: ['#FA6767', '#FFD43D', '#006C4A', '#24A524'],
-            labels: [],
+            colors: ['#24A524', '#FF0000', '#FF8282', '#353535'],
+            labels: ['In Stock Items', 'Out of Stock Items', 'Low Stock Items', 'Dead Stock Items'],
             // need for responsive chart
             responsive: [
                 {
@@ -88,22 +105,14 @@ const InventoryChart = () => {
                         label='In Stock Items'
                         textColor='positive.main'
                     />
-                    <ColoredBadge
-                        color='#B187E8'
-                        label='Low Stock Items'
-                        textColor='countdown.main'
-                    />
+                    <ColoredBadge color='#FF8282' label='Low Stock Items' textColor='red.main' />
                 </Stack>
                 <Stack gap={2}>
+                    <ColoredBadge color='red' label='Out of Stock Items' textColor='danger.main' />
                     <ColoredBadge
-                        color='#FD9800'
-                        label='Out of Stock Items'
-                        textColor='positive.main'
-                    />
-                    <ColoredBadge
-                        color='#FA6767'
+                        color='#353535'
                         label='Dead Stock Items'
-                        textColor='orange.main'
+                        textColor='primary.500'
                     />
                 </Stack>
             </Stack>

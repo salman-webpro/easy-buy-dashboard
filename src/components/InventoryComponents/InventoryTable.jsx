@@ -134,8 +134,10 @@ export default function InventoryTable({ selectedCategory, selectLowStock }) {
                                 {headers.map((header) => (
                                     <TableCell key={header.key} align='center'>
                                         {header.key === 'name' && row[header.key]}
-                                        {header.key === 'stock' && row[header.key] < 10 ? (
-                                            <span style={{ color: 'red' }}>
+                                        {header.key === 'stock' &&
+                                        row[header.key] < 10 &&
+                                        row[header.key] > 0 ? (
+                                            <span style={{ color: '#FF8282' }}>
                                                 Low Stock ({row[header.key]})
                                             </span>
                                         ) : null}
@@ -147,6 +149,16 @@ export default function InventoryTable({ selectedCategory, selectLowStock }) {
                                         {header.key === 'stock' && row[header.key] >= 10 ? (
                                             <span style={{ color: 'green' }}>
                                                 In Stock ({row[header.key]})
+                                            </span>
+                                        ) : null}
+                                        {header.key === 'stock' && row[header.key] === 0 ? (
+                                            <span style={{ color: 'red' }}>
+                                                Out of Stock ({row[header.key]})
+                                            </span>
+                                        ) : null}
+                                        {header.key === 'stock' && row[header.key] < 0 ? (
+                                            <span style={{ color: '#353535' }}>
+                                                Dead Stock ({row[header.key]})
                                             </span>
                                         ) : null}
                                         {header.key === 'lastModified' && row[header.key]}

@@ -42,7 +42,7 @@ export const Palette = {
         main: '#FD9800',
     },
     danger: {
-        main: '#FA6767',
+        main: 'red',
     },
     text: {
         main: '#ACACAC',
