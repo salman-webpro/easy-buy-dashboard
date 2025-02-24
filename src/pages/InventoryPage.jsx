@@ -39,7 +39,7 @@ const InventoryPage = () => {
                 selectLowStock={selectLowStock}
                 setSelectLowStock={setSelectLowStock}
             />
-            <Stack mt={4}>
+            {/* <Stack mt={4}>
                 <Grid container wrap={'nowrap'} gap={2}>
                     <Grid item md={8.3}>
                         <Stack
@@ -63,11 +63,11 @@ const InventoryPage = () => {
                             width={'100%'}
                         >
                             <InventoryChart />
-                            {/*<PieCharts />*/}
+                            <PieCharts />
                         </Stack>
                     </Grid>
                 </Grid>
-            </Stack>
+            </Stack> */}
             <Stack mt={4}>
                 <InventoryTable
                     selectedCategory={selectedCategory}
