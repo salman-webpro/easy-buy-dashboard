@@ -1,10 +1,4 @@
-# BreezeBuy Seller Dashboard
-**Start Date:** 27th September 2023  
-**Company:** Increments Inc.
 
----
-
-## <ins>Regular Update</ins>
 
 ### 27th Sept. - Project Setup
 - [x] Initialized project structure 
